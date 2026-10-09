@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Нууцлалын бодлого — Платформ бизнес ХХК</title>
+<meta name="description" content="Платформ бизнес ХХК-ийн нууцлалын бодлого. BOTU үйлчилгээний өгөгдөл цуглуулалт, боловсруулалт, хадгалалт, устгалт.">
+<link rel="icon" href="../assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/legal.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="/"><img src="../assets/logo.jpg" alt="Platform Business"><span>Platform Business</span></a>
+    <a class="back-link" href="/">← Нүүр хуудас</a>
+  </div>
+</header>
+
+<main>
+
+<div class="doc-badge">Нууцлалын бодлого</div>
+<h1>Нууцлалын бодлого</h1>
+<p class="meta">Платформ бизнес ХХК · Хүчин төгөлдөр болсон: 2026 оны 10 дугаар сарын 9</p>
+
+<p>Платформ бизнес ХХК («бид», «компани») нь <strong>BOTU</strong> нэртэй үйлчилгээг эрхэлдэг. BOTU нь манай үйлчлүүлэгч болох бизнесийн Facebook хуудсанд ирсэн сэтгэгдэл (коммент) болон мессежид тухайн хуудасны эзний нэрийн өмнөөс хариу бэлтгэж илгээдэг.</p>
+
+<p>Энэхүү бодлого нь BOTU үйлчилгээний хүрээнд ямар өгөгдлийг хэрхэн цуглуулж, боловсруулж, хадгалж, устгадгийг тайлбарлана.</p>
+
+<h2>1. Бид ямар өгөгдөл цуглуулдаг вэ</h2>
+
+<h3>1.1 Facebook Платформоос хүлээн авах өгөгдөл</h3>
+<p>Манай үйлчлүүлэгч өөрийн Facebook хуудсыг BOTU-д холбосон тохиолдолд бид Meta-гийн API-аар дамжуулан дараах өгөгдлийг хүлээн авна:</p>
+
+<table>
+<thead><tr><th>Өгөгдөл</th><th>Тайлбар</th></tr></thead>
+<tbody>
+<tr><td>Page-scoped ID (PSID)</td><td>Хэрэглэгчийг тухайн нэг хуудасны хүрээнд ялгах танигч. Facebook-ийн нийтлэг профайлын ID биш.</td></tr>
+<tr><td>Сэтгэгдлийн агуулга</td><td>Хуудасны нийтлэл дор бичигдсэн нийтэд нээлттэй сэтгэгдлийн текст.</td></tr>
+<tr><td>Мессежийн агуулга</td><td>Messenger-ээр хуудас руу илгээсэн мессежийн текст.</td></tr>
+<tr><td>Нийтлэлийн танигч</td><td>Сэтгэгдэл аль нийтлэлд хамаарахыг тодорхойлох ID.</td></tr>
+<tr><td>Хуудасны мэдээлэл</td><td>Хуудасны нэр, ID, хандалтын токен — зөвхөн холбогдсон хуудсанд хамаарна.</td></tr>
+<tr><td>Хугацааны тэмдэг</td><td>Сэтгэгдэл, мессеж хэзээ ирсэн.</td></tr>
+</tbody>
+</table>
+
+<h3>1.2 Үйлчлүүлэгчээс хүлээн авах өгөгдөл</h3>
+<p>Манай үйлчлүүлэгч (хуудасны эзэн) өөрөө системд оруулдаг: бүтээгдэхүүний нэр, үнэ, нөөц, хүргэлтийн нөхцөл, төлбөрийн сувгууд, байнга асуугддаг асуулт-хариултын жагсаалт, холбоо барих мэдээлэл.</p>
+
+<h3>1.3 Техникийн өгөгдөл</h3>
+<p>Үйлчилгээний найдвартай ажиллагааг хангах зорилгоор систем бүртгэл (лог) хөтөлнө: хүсэлтийн цаг, алдааны мэдээлэл, боловсруулалтын үр дүн.</p>
+
+<div class="callout">
+<p><strong>Бид дараахыг цуглуулдаггүй:</strong> Facebook-ийн нэвтрэх нууц үг, картын дугаар, банкны дансны дугаар, регистрийн дугаар, байршлын мэдээлэл, эрүүл мэндийн бүртгэл.</p>
+</div>
+
+<h2>2. Өгөгдлийг юунд ашигладаг вэ</h2>
+<ul>
+<li>Сэтгэгдэл, мессежийн агуулгыг ангилж, зохих хариултыг бэлтгэх.</li>
+<li>Хуудасны эзний нэрийн өмнөөс хариу илгээх.</li>
+<li>Бот хариулах боломжгүй асуултыг хүн оператор руу шилжүүлэх.</li>
+<li>Хуудасны эзэнд өдөр тутмын тайлан гаргах (хэдэн сэтгэгдэл ирсэн, хэдэнд хариулсан, хэдийг шилжүүлсэн).</li>
+<li>Үйлчилгээний алдааг оношлох, чанарыг сайжруулах.</li>
+</ul>
+
+<p>Бид таны өгөгдлийг зар сурталчилгааны зорилгоор ашигладаггүй, худалддаггүй, түрээслүүлдэггүй.</p>
+
+<h2>3. Гуравдагч талууд</h2>
+<p>Үйлчилгээг хүргэхийн тулд бид дараах гуравдагч талуудыг ашигладаг:</p>
+
+<table>
+<thead><tr><th>Тал</th><th>Зорилго</th><th>Дамжуулагдах өгөгдөл</th></tr></thead>
+<tbody>
+<tr><td>Meta Platforms, Inc.</td><td>Facebook хуудас, Messenger-тэй холбогдох</td><td>Хариултын текст, хуудасны танигч</td></tr>
+<tr><td>Хиймэл оюун ухааны загвар нийлүүлэгч</td><td>Сэтгэгдлийн утгыг ойлгож хариулт боловсруулах</td><td>Сэтгэгдэл/мессежийн текст, бүтээгдэхүүний каталогийн мэдээлэл</td></tr>
+<tr><td>Сервер байршуулагч</td><td>Системийг ажиллуулах, өгөгдөл хадгалах</td><td>Бүх боловсруулагдаж буй өгөгдөл (шифрлэгдсэн)</td></tr>
+</tbody>
+</table>
+
+<p>Хиймэл оюун ухааны загвар нийлүүлэгч рүү илгээгдсэн текстийг тухайн нийлүүлэгч загвар сургахад ашиглахгүй байх нөхцөлтэйгөөр гэрээ байгуулдаг.</p>
+
+<p>Хуулийн байгууллагын албан ёсны шаардлагаас бусад тохиолдолд бид өгөгдлийг өөр гуравдагч талд дамжуулдаггүй.</p>
+
+<h2>4. Өгөгдөл хадгалах хугацаа</h2>
+<ul>
+<li><strong>Сэтгэгдэл, мессежийн агуулга:</strong> сүүлийн харилцаанаас хойш 12 сар.</li>
+<li><strong>Системийн лог:</strong> 90 хоног.</li>
+<li><strong>Үйлчлүүлэгчийн каталогийн мэдээлэл:</strong> гэрээ дуусгавар болтол, дараа нь 30 хоногийн дотор устгана.</li>
+<li><strong>Устгах хүсэлт ирсэн тохиолдолд:</strong> 30 хоногийн дотор.</li>
+</ul>
+
+<h2>5. Өгөгдлөө устгуулах</h2>
+<p>Та өөрийн өгөгдлийг устгуулах эрхтэй. Дэлгэрэнгүй зааврыг <a href="/data-deletion">Өгөгдөл устгах заавар</a> хуудаснаас үзнэ үү.</p>
+<p>Товчхондоо хоёр арга байна: <a href="mailto:info@platformbusiness.mn">info@platformbusiness.mn</a> руу хүсэлт илгээх, эсвэл Facebook-ийн <em>Settings → Apps and Websites</em> хэсгээс BOTU-г салгах.</p>
+
+<h2>6. Таны эрх</h2>
+<ul>
+<li>Бид таны талаар ямар өгөгдөл хадгалж байгааг мэдэх.</li>
+<li>Буруу өгөгдлийг засуулах.</li>
+<li>Өгөгдлөө устгуулах.</li>
+<li>Өгөгдөл боловсруулахыг зогсоохыг шаардах.</li>
+</ul>
+<p>Эрхээ хэрэгжүүлэхийн тулд <a href="mailto:info@platformbusiness.mn">info@platformbusiness.mn</a> хаягаар хандана уу. Бид 30 хоногийн дотор хариу өгнө.</p>
+
+<h2>7. Аюулгүй байдал</h2>
+<p>Өгөгдлийг дамжуулах болон хадгалах явцад шифрлэнэ (TLS, encryption at rest). Хандалтыг эрх бүхий ажилтнаар хязгаарлаж, хандалтын түүхийг бүртгэнэ.</p>
+
+<h2>8. Хүүхдийн хувийн мэдээлэл</h2>
+<p>BOTU нь бизнесийн хэрэглээнд зориулагдсан. Бид 13-аас доош насны хүүхдээс санаатайгаар өгөгдөл цуглуулдаггүй. Ийм өгөгдөл цугларсныг мэдсэн даруйд устгана.</p>
+
+<h2>9. Бодлогын өөрчлөлт</h2>
+<p>Энэхүү бодлогод өөрчлөлт оруулсан тохиолдолд шинэчилсэн огноог энэ хуудсанд тэмдэглэнэ. Үндсэн өөрчлөлт орвол үйлчлүүлэгчиддээ и-мэйлээр мэдэгдэнэ.</p>
+
+<h2>10. Холбоо барих</h2>
+<p>
+Платформ бизнес ХХК<br>
+Улаанбаатар, Баянзүрх дүүрэг, 18-р хороо, Намъянжу, Моносфарм трейд ХХК-ийн байр 3 давхар<br>
+Утас: +976 95091929<br>
+И-мэйл: <a href="mailto:info@platformbusiness.mn">info@platformbusiness.mn</a>
+</p>
+
+<hr class="lang-divider">
+
+<div class="doc-badge">Privacy policy</div>
+<h1>Privacy policy</h1>
+<p class="meta">Platform Business LLC · Effective: 9 October 2026</p>
+
+<p>Platform Business LLC ("we", "the company") operates a service called <strong>BOTU</strong>. BOTU prepares and sends replies to comments and messages received on the Facebook Pages of our business clients, on behalf of those Page owners.</p>
+
+<p>This policy explains what data we collect, how we process it, how long we keep it, and how it is deleted.</p>
+
+<h2>1. Data we collect</h2>
+
+<h3>1.1 Data received from the Facebook Platform</h3>
+<p>When a client connects their Facebook Page to BOTU, we receive the following through Meta's APIs:</p>
+
+<table>
+<thead><tr><th>Data</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>Page-scoped ID (PSID)</td><td>An identifier that distinguishes a user within a single Page. Not a Facebook-wide profile ID.</td></tr>
+<tr><td>Comment content</td><td>The text of public comments left on the Page's posts.</td></tr>
+<tr><td>Message content</td><td>The text of messages sent to the Page through Messenger.</td></tr>
+<tr><td>Post identifiers</td><td>IDs used to associate a comment with its post.</td></tr>
+<tr><td>Page information</td><td>Page name, Page ID and access token — limited to connected Pages.</td></tr>
+<tr><td>Timestamps</td><td>When a comment or message was received.</td></tr>
+</tbody>
+</table>
+
+<h3>1.2 Data provided by our clients</h3>
+<p>Our client (the Page owner) enters this data themselves: product names, prices, stock status, delivery terms, payment channels, a list of frequently asked questions and answers, and contact details.</p>
+
+<h3>1.3 Technical data</h3>
+<p>We keep system logs to operate the service reliably: request timestamps, error details and processing outcomes.</p>
+
+<div class="callout">
+<p><strong>We do not collect:</strong> Facebook passwords, payment card numbers, bank account numbers, national ID numbers, location data, or health records.</p>
+</div>
+
+<h2>2. How we use the data</h2>
+<ul>
+<li>To classify comments and messages and prepare an appropriate reply.</li>
+<li>To send replies on behalf of the Page owner.</li>
+<li>To escalate questions the service cannot answer to a human operator.</li>
+<li>To produce a daily report for the Page owner (comments received, replies sent, conversations escalated).</li>
+<li>To diagnose errors and improve service quality.</li>
+</ul>
+
+<p>We do not use this data for advertising, and we do not sell or rent it.</p>
+
+<h2>3. Third parties</h2>
+<p>We rely on the following third parties to deliver the service:</p>
+
+<table>
+<thead><tr><th>Party</th><th>Purpose</th><th>Data shared</th></tr></thead>
+<tbody>
+<tr><td>Meta Platforms, Inc.</td><td>Connecting to Facebook Pages and Messenger</td><td>Reply text, Page identifiers</td></tr>
+<tr><td>AI model provider</td><td>Understanding comment intent and drafting replies</td><td>Comment and message text, product catalog data</td></tr>
+<tr><td>Hosting provider</td><td>Running the system and storing data</td><td>All processed data (encrypted)</td></tr>
+</tbody>
+</table>
+
+<p>Our agreement with the AI model provider prohibits the use of submitted text for model training.</p>
+
+<p>We do not share data with any other third party, except where required by a lawful request from a competent authority.</p>
+
+<h2>4. Retention</h2>
+<ul>
+<li><strong>Comment and message content:</strong> 12 months from the last interaction.</li>
+<li><strong>System logs:</strong> 90 days.</li>
+<li><strong>Client catalog data:</strong> for the term of the agreement, then deleted within 30 days.</li>
+<li><strong>On a deletion request:</strong> within 30 days.</li>
+</ul>
+
+<h2>5. Deleting your data</h2>
+<p>You have the right to have your data deleted. See the <a href="/data-deletion">data deletion instructions</a> for full details.</p>
+<p>In short, there are two routes: email a request to <a href="mailto:info@platformbusiness.mn">info@platformbusiness.mn</a>, or remove BOTU under Facebook's <em>Settings → Apps and Websites</em>.</p>
+
+<h2>6. Your rights</h2>
+<ul>
+<li>To know what data we hold about you.</li>
+<li>To have inaccurate data corrected.</li>
+<li>To have your data deleted.</li>
+<li>To request that we stop processing your data.</li>
+</ul>
+<p>To exercise these rights, contact <a href="mailto:info@platformbusiness.mn">info@platformbusiness.mn</a>. We respond within 30 days.</p>
+
+<h2>7. Security</h2>
+<p>Data is encrypted in transit and at rest (TLS, encryption at rest). Access is restricted to authorised staff and access is logged.</p>
+
+<h2>8. Children's data</h2>
+<p>BOTU is intended for business use. We do not knowingly collect data from children under 13. If we learn that we have, we delete it.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If we change this policy, we update the date on this page. We notify clients by email of material changes.</p>
+
+<h2>10. Contact</h2>
+<p>
+Platform Business LLC<br>
+Namyanju, Monosfarm Treid LLC building, 3rd floor, 18th khoroo, Bayanzurkh district, Ulaanbaatar, Mongolia<br>
+Phone: +976 95091929<br>
+Email: <a href="mailto:info@platformbusiness.mn">info@platformbusiness.mn</a>
+</p>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-row"><img src="../assets/logo.jpg" alt="Platform Business"><strong>Platform Business</strong></div>
+        <div class="footer-tagline">Платформ Бизнес ХХК · 2018 оноос хойш программ хөгжүүлэлт, B2B худалдааны систем, дотоод удирдлагын платформ бүтээдэг</div>
+        <div class="footer-contact">
+          Улаанбаатар, Баянзүрх дүүрэг, 18-р хороо,<br>
+          Намъянжу, Моносфарм трейд ХХК-ийн байр 3 давхар<br>
+          Утас: +976 95091929 · info@platformbusiness.mn
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Бүтээгдэхүүн</h5>
+          <a href="https://bmall.mn" target="_blank">bmall.mn</a>
+          <a href="https://esupply.mn" target="_blank">esupply.mn</a>
+          <a href="https://eorder.mn" target="_blank">eorder.mn</a>
+          <a href="https://order.monostrade.mn" target="_blank">Monos Trade</a>
+          <a href="https://helix.mn" target="_blank">helix.mn</a>
+        </div>
+        <div class="footer-col">
+          <h5>Компани</h5>
+          <a href="/#about">Бидний тухай</a>
+          <a href="/#contact">Холбоо барих</a>
+          <span>RackCorp Mongolia</span>
+        </div>
+        <div class="footer-col">
+          <h5>Эрх зүй</h5>
+          <a href="/privacy">Нууцлалын бодлого</a>
+          <a href="/terms">Үйлчилгээний нөхцөл</a>
+          <a href="/data-deletion">Өгөгдөл устгах</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">© 2026 Платформ Бизнес ХХК. Бүх эрх хуулиар хамгаалагдсан.</div>
+  </div>
+</footer>
+
+</body>
+</html>
